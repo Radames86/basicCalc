@@ -1,43 +1,75 @@
-#calcBody{
-    background-color: lightblue;
-    height: 270px;
-    width: 200px;
-    border-radius: 25px;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(121, 5, 121);
 }
 
-body{
+.calculator{
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.screen{
+    width: 224px;
+    background-color: rgb(238, 231, 231);
+    font-size: 40px;
+    text-align: end;
+    padding: 4px;
+}
+
+.buttons{
+    width: 235px;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#screen{
-    background-color: black;
-    height: 20%;
-    width: 160px;
+button{
+    background-color: rgb(150, 50, 150);
+    border: none;
+    color: black;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 4px;
+     text-shadow: 1px 2px 0px rgb(121, 5, 121),
+    1px 5px 0px gray;
 }
 
-#buttons{
-    margin-top: 20px;
-    height: 60%;
-    background-color: bisque;
-    width: 160px;
+button:hover{
+    background-color:royalblue;
 }
 
-#operators{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+button:active{
+    background-color: red ;
 }
 
-.button{
-    height: 25px;
-    width: 35px;
+#equals{
+    background-color: orangered;
+}
+ 
+#equals:hover{
+    background-color: green;
+}
+
+#equals:active{
     background-color: blue;
-    border-radius: 10px;
-    text-align: center;
 }
+
+#clear{
+    width: 100%;
+    font-size: 30px;
+    background-color: orangered;
+}
+
+#clear:hover{
+    background-color: green;
+}
+
+#clear:active{
+    background-color: blue;
+}
+
